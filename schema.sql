@@ -124,7 +124,7 @@ CREATE TABLE reimbursement_requests (
     description TEXT NULL,
     amount DECIMAL(8,2) NOT NULL,
     ref_bill_number VARCHAR(255) NOT NULL,
-    bill_attached BLOB NOT NULL,
+    bill_url VARCHAR(255) NOT NULL,
     created_at DATETIME NOT NULL,
     updated_at DATETIME NOT NULL,
     is_deleted BOOLEAN NOT NULL DEFAULT FALSE,
